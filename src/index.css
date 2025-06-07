@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+input{
+    @apply border
+}
+
+/* Custom styles for A4 page */
+.A4 {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 20mm;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Print styles */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 0;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background: white !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  
+  /* Hide everything by default */
+  body * {
+    visibility: hidden;
+  }
+  
+  /* Show only the cover page */
+  #coverPage,
+  #coverPage * {
+    visibility: visible;
+  }
+  
+  /* Position the cover page for print */
+  #coverPage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Remove shadows and borders for print */
+  .A4 {
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20mm;
+  }
+  
+  /* Ensure images print properly */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Hide any elements you don't want to print */
+  .no-print {
+    display: none !important;
+  }
+}
+
+/* Screen styles for better preview */
+@media screen {
+  body {
+    background-color: #f0f0f0;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,87 @@
+[   
+    {
+        "name": "First",
+        "index": 1,
+        "subjects":[
+            "C-Programing" ,
+            "Introduction to Information Technology",
+            "Digital Logic"
+        ]
+    },
+    {
+        "name": "Second",
+        "index": 2,
+        "subjects":[
+            "Microprocessor and Computer Architecture",
+            "Object Oriented Programming",
+            "Basic Statistics"
+        ]
+    },
+    {
+        "name": "Third",
+        "index": 3,
+        "subjects":[
+            "Data Structure and Algorithms",
+            "Database Management System",
+            "Operating System"
+        ]
+    },
+    {
+        "name": "Fourth",
+        "index": 4,
+        "subjects":[
+            "Web Technology I",
+            "Artificial Intelligence",
+            "System Analysis and Design",
+            " Network and Data Communications"
+        ]
+    },
+    {
+        "name": "Fifth",
+        "index": 5,
+        "subjects":[
+            "Web Technology II",
+            "Software Engineering",
+            "Information Security",
+            "Computer Graphics"
+        ]
+    },
+    {
+        "name": "Sixth",
+        "index": 6,
+        "subjects":[
+            "Net-Centric Computing",
+            "Database Administration",
+            "Wireless Networking",
+            "Geographical Information System"
+        ]
+    },
+    {
+        "name": "Seventh",
+        "index": 7,
+        "subjects":[
+            "Advanced Java Programming",
+            "Software Project Management",
+            "E-Commerce",
+            "Project Work",
+            "DSS And Expert System",
+            "Mobile Application Development",
+            "Simulation And Modeling",
+            "Cloud Computing",
+            ""
+        ]
+    },
+    {
+        "name": "Eighth",
+        "index": 8,
+        "subjects":[
+            "Network System Administration",
+            "E-Governance",
+            "Data Warehousing And Data Mining",
+            "Knowledge Management",
+            "Image Processing",
+            "Network Security",
+            "Introduction To Telecommunications"
+        ]
+    }
+]
