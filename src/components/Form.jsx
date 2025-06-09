@@ -65,6 +65,7 @@ const Form = () => {
         }
       </select>
     </div>
+    
     </form>
   );
 };
