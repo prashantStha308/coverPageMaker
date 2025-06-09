@@ -1,10 +1,19 @@
-const Input = ({ label="label" , htmlFor="label" , type = "text" , required= "false" , placeholder= "" }) => {
+const Input = ({ label = "label", htmlFor = "label", type = "text", required = false, placeholder = "", value = "", onChange }) => {
   return (
-    <div className="flex gap-2 items-center" >
-        <label htmlFor={htmlFor}> {label}: </label>
-        <input type={type} required={required} name={htmlFor} placeholder={placeholder} className="p-0.5 rounded-sm" />
+    <div className="flex items-center gap-2 " >
+      <label htmlFor={htmlFor}>{label}:</label>
+      <input
+        id={htmlFor}
+        name={htmlFor}
+        type={type}
+        required={required}
+        placeholder={placeholder}
+        value={value}
+        onChange={onChange}
+        className="p-0.5 border"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default Input
+export default Input;
