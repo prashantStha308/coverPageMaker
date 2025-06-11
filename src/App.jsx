@@ -11,6 +11,7 @@ function App() {
   const downloadRef = useRef();
   const { loadSemester } = useGlobalStore();
   const nodeRef = useRef();
+  document.title = "Cover Page Maker";
 
   const animateDownload = ()=>{
     if( downloadRef.current !== null ){
@@ -56,7 +57,7 @@ function App() {
   }
 
   return (
-    <main className="flex flex-col gap-4 items-center min-h-screen bg-neutral-300" >
+    <main className="flex flex-col gap-4 items-center min-h-screen bg-[#03131A]" >
       <div ref={downloadRef} className="p-3 rounded-full bg-gray-100 absolute opacity-0 -top-20 right-3 transition-all duration-700 ease-in " >
         <Download size={30} />
       </div>

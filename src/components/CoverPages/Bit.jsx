@@ -26,13 +26,13 @@ const Bit = () => {
                         <span id="subName">{selectedSub}</span> LAB REPORT
                     </h1>
                 </div>
-                <div className="flex flex-col gap-4 items-center text-xl">
+                <div className="flex flex-col gap-4 items-center text-xl w-full">
                     <h1>SUBMITTED BY:</h1>
-                    <div className="flex flex-col items-start text-xl gap-1">
-                        <div className="flex gap-2 items-center ">
+                    <div className="flex flex-col items-start text-xl gap-1 w-full">
+                        <div className="flex gap-2 items-center w-full ">
                             <label>Name:</label>
                             <span
-                                className="inline-block w-xs p-0 m-0"
+                                className="inline-block p-0 m-0"
                                 >
                                 {userData.studentName}
                             </span>
@@ -40,7 +40,7 @@ const Bit = () => {
                         <div className="flex gap-2 items-center ">
                             <label>Roll No:</label>
                             <span
-                                className="inline-block w-xs p-0 m-0"
+                                className="inline-block p-0 m-0"
                             >
                                 {userData.rollNumber}
                             </span>

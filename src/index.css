@@ -5,9 +5,15 @@ html, body {
   padding: 0;
 }
 
+*{
+  font-family: Arial, "Times New Roman", "Calibri" , Helvetica, Verdana, Tahoma;
+}
+
+
 .cover-wrapper {
   page-break-inside: avoid;
   overflow: hidden;
+  background-color: white;
 }
 
 
@@ -15,140 +21,7 @@ html, body {
 .A4 {
   width: 210mm;
   min-height: 297mm;
-  background: white;
+  background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Screen styles for better preview */
-@media screen {
-  body {
-    background-color: #f0f0f0;
-  }
-  
-  /* Ensure form is visible on screen */
-}
-
-/* Print styles */
-@media print {
-  @page {
-    size: A4 portrait;
-    margin: 0;
-  }
-  
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
-    color-adjust: exact !important;
-  }
-  
-  body {
-    margin: 0 !important;
-    background: white !important;
-    font-size: 12pt !important;
-  }
-  
-  /* Hide form and other non-printable elements */
-  form,
-  .no-print {
-    display: none !important;
-  }
-  
-  /* Show only the cover page */
-  #coverPage {
-    display: block !important;
-    position: relative !important;
-    width: 100% !important;
-    height: 100vh !important;
-    page-break-after: always;
-  }
-  
-  /* Reset A4 container for print */
-  .A4 {
-    box-shadow: none !important;
-    border: none !important;
-    width: 100% !important;
-    min-height: 100vh !important;
-    background: white !important;
-  }
-  
-  /* Ensure proper spacing and sizing for print */
-  #coverPage section {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 2rem !important;
-    height: 100% !important;
-    justify-content: space-between !important;
-  }
-  
-  /* Header styles */
-  #coverPage header {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    /* margin-top: 1rem !important; */
-  }
-  
-  #coverPage header h1 {
-    font-size: 24pt !important;
-    font-weight: bold !important;
-    /* margin-bottom: 1rem !important; */
-    text-align: center !important;
-  }
-  
-  /* Content styles */
-  #coverPage .flex {
-    display: flex !important;
-  }
-  
-  #coverPage .flex-col {
-    flex-direction: column !important;
-  }
-  
-  #coverPage .items-center {
-    align-items: center !important;
-  }
-  
-  #coverPage .gap-8 {
-    gap: 2rem !important;
-  }
-  
-  #coverPage .gap-4 {
-    gap: 1rem !important;
-  }
-  
-  #coverPage .gap-2 {
-    gap: 0.5rem !important;
-  }
-  
-  #coverPage .gap-1 {
-    gap: 0.25rem !important;
-  }
-  
-  #coverPage .text-xl {
-    font-size: 16pt !important;
-  }
-  
-  #coverPage .text-4xl {
-    font-size: 24pt !important;
-  }
-  
-  /* Input styles for print */
-  #coverPage input {
-    border: none !important;
-    background: transparent !important;
-    font-size: 16pt !important;
-    border-bottom: 1px solid black !important;
-  }
-  
-  /* Footer styles */
-  #coverPage footer {
-    /* margin-bottom: 1rem !important; */
-    text-align: center !important;
-  }
-  
-  #coverPage footer p {
-    font-size: 14pt !important;
-    /* margin: 0.5rem 0 !important; */
-  }
-}

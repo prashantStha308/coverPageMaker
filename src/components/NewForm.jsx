@@ -34,25 +34,25 @@ const NewForm = ({handleClick}) => {
     }
 
     return (
-    <section className="flex flex-col bg-gray-100 rounded-lg w-fit m-auto items-center text-gray-900  gap-8 p-4">
+    <section className="flex flex-col border bg-black border-[#27513E] rounded-sm w-fit m-auto items-center text-[#ABB0B2] gap-8 p-4">
         <div className="flex flex-col items-center" >
             <h1 className="text-2xl font-extrabold text-center" > Make your Cover Page </h1>
-            <h2 className="text-base text-center" > Currently available only for BIT students at CCT, Dharan </h2>
+            <h2 className="text-base text-center font-bold" > Currently available only for BIT students at CCT, Dharan </h2>
         </div>
         <form className="flex flex-col gap-4"  onSubmit={handleSubmit} >
             <div className="flex flex-col" >
-                <label className="text-gray-700" htmlFor="studentName"> Student Name: </label>
-                <input type="text" name="studentName" id="studentName" className="border rounded-sm px-2 py-0.5" value={userData.studentName} onChange={handleChange} required />
+                <label className="" htmlFor="studentName"> Student's Full Name </label>
+                <input type="text" name="studentName" id="studentName" className="border rounded-sm caret-[#297442] focus:outline-none focus:ring-2 focus:ring-[#1F8456] px-2 py-0.5" value={userData.studentName} onChange={handleChange} required />
             </div>
 
             <div className="flex flex-col">
-                <label className="text-gray-700" htmlFor="rollNumber"> Roll No.: </label>
-                <input type="number" name="rollNumber" id="rollNumber" className="border rounded-sm px-2 py-0.5" value={userData.rollNumber} onChange={handleChange} required />
+                <label className="" htmlFor="rollNumber"> Roll No.: </label>
+                <input type="number" name="rollNumber" id="rollNumber" className="border rounded-sm caret-[#297442] focus:outline-none focus:ring-2 focus:ring-[#1F8456] px-2 py-0.5" value={userData.rollNumber} onChange={handleChange} required />
             </div>
 
                 <div className="flex items-center gap-4 " >
-                    <label className="text-gray-700" htmlFor="semesterSelect">Semester: </label>
-                    <select name="semesterSelect" id="semesterSelect" onChange={handleSemChange} className="text-black bg-neutral-300 p-1 rounded-sm w-36 " >
+                    <label className="" htmlFor="semesterSelect">Semester </label>
+                    <select name="semesterSelect" id="semesterSelect" onChange={handleSemChange} className="cursor-pointer hover:bg-[#103842] bg-[#1A4651] text-[#ABB0B2] p-1 rounded-sm w-36 " >
                         {
                             semesterData.map( (item , index)=>(
                                 <option key={index} value={item.index}> {item.name} </option>
@@ -62,8 +62,8 @@ const NewForm = ({handleClick}) => {
                 </div>
 
                 <div className="flex items-center gap-4" >
-                    <label className="text-gray-700" htmlFor="subjectSelect">Subject: </label>
-                    <select name="subjectSelect" id="subjectSelect" onChange={handleSubChange} className="text-black bg-neutral-300 p-1 rounded-sm w-36 " ref={subRef} >
+                    <label className="" htmlFor="subjectSelect">Subject: </label>
+                    <select name="subjectSelect" id="subjectSelect" onChange={handleSubChange} className="cursor-pointer hover:bg-[#103842] bg-[#1A4651] text-[#ABB0B2] p-1 rounded-sm w-36 " ref={subRef} >
                         {
                         subjectData.map( (item , index) => (
                             <option key={index} value={item} > {item} </option>
@@ -73,7 +73,7 @@ const NewForm = ({handleClick}) => {
                 </div>
 
             <div className="flex flex-col">
-                <button type="submit" className="rounded-sm p-2 cursor-pointer bg-gray-600 hover:bg-gray-700 active:bg-gray-700 transition-all duration-100 ease-in text-neutral-50 " > Download Page </button>
+                <button type="submit" className="rounded-sm p-2 cursor-pointer font-bold text-[#5D9971] bg-[#1A4651] hover:bg-[#297442] active:bg-[#297442] transition-all duration-100 ease-in" > Download Page </button>
             </div>
 
         </form>
