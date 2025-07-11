@@ -1,0 +1,110 @@
+[   
+    {
+        "name": "First",
+        "index": 1,
+        "subjects":[
+            "Introduction to Information Technology",
+            "C-Programing" ,
+            "Digital Logic",
+            "Physics"
+        ]
+    },
+    {
+        "name": "Second",
+        "index": 2,
+        "subjects":[
+            "Object Oriented Programming",
+            "Microprocessor",
+            "Statistics I"
+        ]
+    },
+    {
+        "name": "Third",
+        "index": 3,
+        "subjects":[
+            "Data Structure and Algorithms",
+            "Computer Architecture",
+            "Computer Graphics",
+            "Statistics II"
+        ]
+    },
+    {
+        "name": "Fourth",
+        "index": 4,
+        "subjects":[
+            "Theory of Computation",
+            "Computer Networks",
+            "Database Management System",
+            "Operating Systems",
+            "Artificial Intelligence"
+        ]
+    },
+    {
+        "name": "Fifth",
+        "index": 5,
+        "subjects":[
+            "Design and Analysis of Algorithms",
+            "System Analysis and Design",
+            "Cryptography",
+            "Simulation and Modelling",
+            "Web Technology",
+            "Image Processing",
+            "Knowledge Management",
+            "Microprocessor Based Design",
+            "Multimedia Computing",
+            "Society and Ethics in Information Technology",
+            "Wireless Networking"
+        ]
+    },
+    {
+        "name": "Sixth",
+        "index": 6,
+        "subjects":[
+            "Software Engineering",
+            "E-Governance",
+            "Net-Centric Computing",
+            "Compiler Design and Construction",
+            "Technical Writing",
+            "Applied Logic",
+            "Automation and Robotics",
+            "Cognitive Science",
+            "Computer Hardware Design",
+            "E-Commerce",
+            "Neural Networks"
+        ]
+    },
+    {
+        "name": "Seventh",
+        "index": 7,
+        "subjects":[
+            "Advanced Java Programming",
+            "Data Warehousing And Data Mining",
+            "Database Administrator",
+            "Digital System Design",
+            "Informational Retrival",
+            "International Marketing",
+            "Network Security",
+            "Software Project Management"
+        ]
+    },
+    {
+        "name": "Eighth",
+        "index": 8,
+        "subjects":[
+            "Advanced Database",
+            "Internship",
+            "Advanced Networking with IPV6",
+            "Decision Support System and Expert System",
+            "Distributed and Object-Oriented Database",
+            "Distributed Networking",
+            "Embedded System Programming",
+            "Game Technology",
+            "Geographical Information System",
+            "International Business Management",
+            "Introduction to Cloud Computing",
+            "Mobile Application Development",
+            "Network and System Administration",
+            "Real Time Systems"
+        ]
+    }
+]

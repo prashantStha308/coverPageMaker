@@ -3,8 +3,8 @@
         "name": "First",
         "index": 1,
         "subjects":[
-            "C-Programing" ,
             "Introduction to Information Technology",
+            "C-Programing" ,
             "Digital Logic"
         ]
     },
@@ -33,7 +33,7 @@
             "Web Technology I",
             "Artificial Intelligence",
             "System Analysis and Design",
-            " Network and Data Communications"
+            "Network and Data Communications"
         ]
     },
     {
@@ -52,8 +52,13 @@
         "subjects":[
             "Net-Centric Computing",
             "Database Administration",
+            "Management Information System",
+            "Research Methodology",
+            "Geographical Information System",
+            "Multimedia Computing",
             "Wireless Networking",
-            "Geographical Information System"
+            "Society And Ethics In IT",
+            "Psychology"
         ]
     },
     {
@@ -63,12 +68,11 @@
             "Advanced Java Programming",
             "Software Project Management",
             "E-Commerce",
-            "Project Work",
             "DSS And Expert System",
             "Mobile Application Development",
             "Simulation And Modeling",
             "Cloud Computing",
-            ""
+            "Marketing"
         ]
     },
     {
@@ -77,6 +81,7 @@
         "subjects":[
             "Network System Administration",
             "E-Governance",
+            "Internship",
             "Data Warehousing And Data Mining",
             "Knowledge Management",
             "Image Processing",

@@ -1,8 +1,8 @@
 import html2canvas from 'html2canvas';
 
-export const fetchData = async () => {
+export const fetchData = async (field="bit") => {
   try {
-    const res = await fetch('/semester.json');
+    const res = await fetch(`/${field.toLocaleLowerCase()}.json`);
     const data = await res.json();
     return { success: true, data: data, message: "Fetched Successfully" };
   } catch (error) {

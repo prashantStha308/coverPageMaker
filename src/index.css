@@ -1,14 +1,18 @@
 @import "tailwindcss";
 
-html, body {
-  margin: 0;
-  padding: 0;
+:root{
+  --width-a4: 210mm;
+  --height-a4: 297mm;
 }
 
 *{
   font-family: Arial, "Times New Roman", "Calibri" , Helvetica, Verdana, Tahoma;
 }
 
+html, body {
+  margin: 0;
+  padding: 0;
+}
 
 .cover-wrapper {
   page-break-inside: avoid;
@@ -17,11 +21,23 @@ html, body {
 }
 
 
-/* Custom styles for A4 page */
 .A4 {
-  width: 210mm;
-  min-height: 297mm;
+  width: var(--width-a4);
+  min-height: var(--height-a4);
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.preview-wrapper {
+  /* This wrapper controls layout size */
+  width: calc(210mm * 0.35);
+  height: calc(297mm * 0.35);
+  overflow: hidden;
+  display: inline-block;
+}
+
+.preview-A4 {
+  width: 210mm;
+  height: 297mm;
+  transform: scale(0.35);
+  transform-origin: top left;
+}
