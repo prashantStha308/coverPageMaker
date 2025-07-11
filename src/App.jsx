@@ -1,16 +1,16 @@
 import AppContent from "./AppContent";
-import { BrowserRouter , Routes , Route } from "react-router-dom";
-import Bit from "./components/CoverPages/Bit";
+// import { BrowserRouter , Routes , Route } from "react-router-dom";
+// import Test from "./components/CoverPages/Test";
 
 function App() {
 
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<AppContent />} />
-        <Route path="/bit" element={<Bit />} />
-      </Routes>
-    </BrowserRouter>
+    <AppContent />
+    // <BrowserRouter>
+    //   <Routes>
+    //     <Route path="/" element={<AppContent />} />
+    //   </Routes>
+    // </BrowserRouter>
   )
 }
 
