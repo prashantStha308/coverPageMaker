@@ -2,7 +2,7 @@ import useGlobalStore from "../../store/global.store"
 
 const IT = () => {
 
-    const { userData, selectedSem, selectedSub , selectedField } = useGlobalStore();
+    const { userData, selectedSem, selectedSub , selectedField , fullFieldName } = useGlobalStore();
 
 
     const getOrdinal = (num) => {
@@ -51,7 +51,7 @@ const IT = () => {
 
                 <footer className="text-xl flex flex-col gap-1 font-bold">
                     <p>
-                        <span>{sem}</span> Semester Bachelor in Information Technology({selectedField.toUpperCase()})
+                        <span>{sem}</span> Semester { fullFieldName }({selectedField.toUpperCase()})
                     </p>
                     <p>
                         Submitted to: Department of Information Technology

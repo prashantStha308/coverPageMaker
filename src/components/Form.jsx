@@ -2,7 +2,7 @@ import { useRef } from "react";
 import useGlobalStore from "../store/global.store";
 
 const Form = ({handleClick}) => {
-    const { userData , semesterData, setUserData , subjectData=[] , loadSubject , loadTargetSem , setSelectedSub , fields , setSelectedFields , loadFieldData , selectedSem , selectedSub , selectedField } = useGlobalStore();
+    const { userData , semesterData, setUserData , subjectData=[] , loadSubject , loadTargetSem , setSelectedSub , fields , setSelectedFields , loadFieldData , selectedSem , selectedSub , selectedField , setFullFieldName } = useGlobalStore();
     const subRef = useRef();
 
     const handleChange = (e) => {
