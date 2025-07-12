@@ -45,14 +45,15 @@ const Form = ({handleClick}) => {
             <h2 className="text-base md:text-lg text-center font-bold" > Currently available exclusively for IT students of CCT, Dharan. </h2>
         </div>
         <form className="flex flex-col gap-4"  onSubmit={handleSubmit} >
+            {/* Student Name */}
             <div className="flex flex-col" >
                 <label className="text-sm md:text-base" htmlFor="studentName"> Student's Full Name </label>
-                <input type="text" name="studentName" id="studentName" className="border rounded-sm caret-[#297442] focus:outline-none focus:ring-2 focus:ring-[#1F8456] px-2 py-0.5" value={userData.studentName} onChange={handleChange} required />
+                <input type="text" name="studentName" id="studentName" className="border rounded-sm caret-[#297442] focus:outline-none focus:ring-2 focus:ring-[#1F8456] px-2 py-0.5" placeholder="Your Name" value={userData.studentName} onChange={handleChange} required />
             </div>
-
+            {/* Roll Number */}
             <div className="flex flex-col">
                 <label className="text-sm md:text-base" htmlFor="rollNumber"> Roll No.: </label>
-                <input type="number" name="rollNumber" id="rollNumber" className="border rounded-sm caret-[#297442] focus:outline-none focus:ring-2 focus:ring-[#1F8456] px-2 py-0.5" value={userData.rollNumber} onChange={handleChange} required />
+                <input type="number" name="rollNumber" id="rollNumber" className="border rounded-sm caret-[#297442] focus:outline-none focus:ring-2 focus:ring-[#1F8456] px-2 py-0.5" placeholder="Your Roll Number" value={userData.rollNumber} onChange={handleChange} required />
             </div>
             
             {/* Select Field */}

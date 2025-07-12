@@ -1,6 +1,6 @@
 import useGlobalStore from "../../store/global.store"
 
-const Bit = () => {
+const IT = () => {
 
     const { userData, selectedSem, selectedSub , selectedField } = useGlobalStore();
 
@@ -63,4 +63,4 @@ const Bit = () => {
     )
 }
 
-export default Bit
+export default IT
