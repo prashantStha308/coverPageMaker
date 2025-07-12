@@ -71,7 +71,7 @@ const Form = ({handleClick}) => {
                 {/* Select Semester */}
             <div className="flex items-center gap-4 " >
                 <label className="text-sm md:text-base" htmlFor="semesterSelect">Semester: </label>
-                <select name="semesterSelect" id="semesterSelect" value={selectedSem} onChange={handleSemChange} className="cursor-pointer hover:bg-[#103842] bg-[#1A4651] text-[#ABB0B2] p-1 rounded-sm w-36 " >
+                <select name="semesterSelect" id="semesterSelect" onChange={handleSemChange} className="cursor-pointer hover:bg-[#103842] bg-[#1A4651] text-[#ABB0B2] p-1 rounded-sm w-36 " >
                     {
                         semesterData.map( (item , index)=>(
                             <option key={index} value={item.index}> {item.name} </option>

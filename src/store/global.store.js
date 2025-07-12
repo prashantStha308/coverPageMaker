@@ -58,17 +58,16 @@ const GlobalStore = create(set=>({
       selectedSub: res?.data[0]?.subjects[0]
     });
   },
+  
 
   loadTargetSem:(index)=>{
     const state = GlobalStore.getState();
-    const target = state.semesterData.find( item=> item.index == index );
-
+    const target = state.semesterData.find( item=> item.index === parseInt(index) );
     set({selectedSem: target});
     set({subjectData: target.subjects});
     set({selectedSub: target.subjects[0]});
-
     return target;
-  },
+},
 
   loadSubject: (index)=>{
     const state = GlobalStore.getState();
