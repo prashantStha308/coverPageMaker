@@ -31,8 +31,6 @@ function AppContent() {
     if( downloadRef.current !== null ){
       downloadRef.current.style.opacity = 0;
       downloadRef.current.style.top = '-5rem';
-      setTimeout(() => { } , 100)
-      downloadRef.current.style.opacity = 0;
     }
   }
 
