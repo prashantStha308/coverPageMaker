@@ -16,9 +16,6 @@ function AppContent() {
   const downloadRef = useRef();
   const { loadFieldData } = useGlobalStore();
   const nodeRef = useRef();
-  useEffect(() => {
-    document.title = "Personalized Front Page Maker";
-  }, []);
 
   const animateDownload = ()=>{
     if( downloadRef.current !== null ){
