@@ -31,7 +31,7 @@ function AppContent() {
     if( downloadRef.current !== null ){
       downloadRef.current.style.opacity = 0;
       downloadRef.current.style.top = '-5rem';
-      await new Promise(resolve => setTimeout(resolve , 100));
+      setTimeout(() => { } , 100)
       downloadRef.current.style.opacity = 0;
     }
   }
