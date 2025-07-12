@@ -22,7 +22,7 @@ const GlobalStore = create(set=>({
       case 'bit':
           return "Bachelor in Information Technology";
       case 'csit':
-          return "Bsc. Computer Science and Information Technology";
+          return "Bsc.Computer Science and Information Technology";
       default:
           return "";
     }
