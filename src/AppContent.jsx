@@ -8,6 +8,7 @@ import CoverPage from "./components/CoverPage"
 import CombinedForm from "./components/CombinedForm";
 import Download from "./components/icons/Download";
 import Loader from "./components/Loader.jsx";
+import Footer from "./components/Footer.jsx";
 
 function AppContent() {
 
@@ -63,7 +64,7 @@ function AppContent() {
   }
 
   return (
-    <main className="flex flex-col gap-44 md:gap-4 items-center min-h-screen bg-[#081e28] m-auto" >
+    <main className="flex flex-col gap-36 md:gap-4 items-center min-h-screen bg-[#081e28] m-auto" >
       <div ref={downloadRef} className="p-3 rounded-full bg-gray-100 absolute opacity-0 -top-20 right-3 transition-all duration-700 ease-in " >
         <Download size={30} />
       </div>
@@ -72,9 +73,10 @@ function AppContent() {
       <CombinedForm handleClick={handleDownloadWithCanvas} />
       <div className="md:hidden"></div>
       
-      <div id="coverPage">
-        <CoverPage nodeRef={nodeRef} />
-      </div>
+      {/* Invisible to viewer */}
+      <CoverPage nodeRef={nodeRef} />
+
+      <Footer />
     </main>
   )
 }

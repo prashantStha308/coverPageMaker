@@ -1,13 +1,38 @@
-# React + Vite
+# Personalized Front Page Maker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple web tool for creating front pages for your report assignments.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This app helps students at CCT, Dharan to quickly create front pages. Just fill in your details and get a ready-to-use front page with the college logo and proper formatting. This is currently only available for IT faculties, including both BIT and CSIT
 
-## Expanding the ESLint configuration
+## How does it work?
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# coverPageMaker
+This app makes use of the `html2canvas` javaScript library to screenshot a HTML node and makes it available to download.
+
+## Running it locally
+
+Make sure you have node installed into your system
+
+```bash
+    # Clone this repository
+    git clone https://github.com/prashantStha308/coverPageMaker.git
+
+    # Change Directory
+    cd coverPageMaker
+
+    # Install dependencies
+    npm i
+
+    # Run it locally
+    npm run dev
+```
+
+## Future ideas
+
+- More template options
+- Support for other departments
+
+## Notes
+
+This is made specifically for CCT,Dharan students. If you have suggestions or run into issues, feel free to reach out!
